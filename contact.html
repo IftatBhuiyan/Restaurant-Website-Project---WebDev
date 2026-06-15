@@ -8,21 +8,26 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="logo">The Corner Grill</div>
+      <div class="logo">
+        <span class="logo-mark" aria-hidden="true">🍽</span>
+        <span>The Corner Grill</span>
+      </div>
       <button class="menu-toggle" aria-label="Open menu">☰</button>
       <nav>
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a class="active" href="contact.html">Book Table</a>
+        <a class="order-link" href="menu.html">Order Online</a>
       </nav>
     </header>
 
     <main>
       <section class="contact-grid">
-        <div>
+        <div class="page-panel">
           <h1>Contact</h1>
-          <p>Send a message and we will reply soon.</p>
+          <p>Visit us or send a quick message. We will reply soon.</p>
+          <p><strong>Location:</strong> Times Square, New York, NY</p>
           <iframe
             title="The Corner Grill map"
             src="https://www.google.com/maps?q=Times+Square,+New+York,+NY&output=embed"
@@ -30,7 +35,7 @@
           ></iframe>
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form page-panel">
           <label for="name">Name</label>
           <input id="name" name="name" required />
 
@@ -50,6 +55,11 @@
         <strong>Business Hours</strong>
         <p>Mon-Fri: 10am - 10pm</p>
         <p>Sat-Sun: 11am - 11pm</p>
+      </div>
+      <div class="footer-col">
+        <strong>Follow Us</strong>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
       </div>
     </footer>
 

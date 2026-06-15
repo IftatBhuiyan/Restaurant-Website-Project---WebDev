@@ -8,26 +8,30 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="logo">The Corner Grill</div>
+      <div class="logo">
+        <span class="logo-mark" aria-hidden="true">🍽</span>
+        <span>The Corner Grill</span>
+      </div>
       <button class="menu-toggle" aria-label="Open menu">☰</button>
       <nav>
         <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
+        <a class="active" href="menu.html">Menu</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html">Book Table</a>
+        <a class="order-link" href="menu.html">Order Online</a>
       </nav>
     </header>
 
     <main>
-      <section>
+      <section class="page-panel">
         <h1>Menu</h1>
-        <p>All prices in USD</p>
+        <p>Choose a meal and add it to your cart. All prices are in USD.</p>
 
         <div class="menu-grid">
           <article class="menu-card">
             <h3>Grilled Salmon</h3>
             <p>Served with rice and seasonal vegetables.</p>
-            <strong>$18.00</strong>
+            <strong class="menu-price">$18.00</strong>
             <button
               class="add-to-cart-btn"
               type="button"
@@ -40,7 +44,7 @@
           <article class="menu-card">
             <h3>Truffle Risotto</h3>
             <p>Creamy mushroom risotto with parmesan.</p>
-            <strong>$15.50</strong>
+            <strong class="menu-price">$15.50</strong>
             <button
               class="add-to-cart-btn"
               type="button"
@@ -53,7 +57,7 @@
           <article class="menu-card">
             <h3>BBQ Ribs</h3>
             <p>Ribs with house smoked BBQ glaze.</p>
-            <strong>$17.00</strong>
+            <strong class="menu-price">$17.00</strong>
             <button
               class="add-to-cart-btn"
               type="button"
@@ -66,7 +70,7 @@
           <article class="menu-card">
             <h3>Steak Plate</h3>
             <p>Steak, fries, and salad.</p>
-            <strong>$21.00</strong>
+            <strong class="menu-price">$21.00</strong>
             <button
               class="add-to-cart-btn"
               type="button"
@@ -79,7 +83,7 @@
           <article class="menu-card">
             <h3>Caesar Salad</h3>
             <p>Classic Caesar with croutons and parmesan.</p>
-            <strong>$10.00</strong>
+            <strong class="menu-price">$10.00</strong>
             <button
               class="add-to-cart-btn"
               type="button"
@@ -92,7 +96,7 @@
           <article class="menu-card">
             <h3>Chocolate Cake</h3>
             <p>Dark chocolate cake with vanilla cream.</p>
-            <strong>$8.50</strong>
+            <strong class="menu-price">$8.50</strong>
             <button
               class="add-to-cart-btn"
               type="button"
@@ -105,8 +109,9 @@
         </div>
       </section>
 
-      <section class="cart-shell">
+      <section class="cart-shell page-panel">
         <h2>Your Cart</h2>
+        <p class="cart-note">Items you add from the menu will show here.</p>
         <div id="cart-items" class="cart-items"></div>
         <div class="cart-summary">
           <span>Total</span>
@@ -124,6 +129,11 @@
         <strong>Business Hours</strong>
         <p>Mon-Fri: 10am - 10pm</p>
         <p>Sat-Sun: 11am - 11pm</p>
+      </div>
+      <div class="footer-col">
+        <strong>Follow Us</strong>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
       </div>
     </footer>
 

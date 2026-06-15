@@ -8,13 +8,17 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="logo">The Corner Grill</div>
+      <div class="logo">
+        <span class="logo-mark" aria-hidden="true">🍽</span>
+        <span>The Corner Grill</span>
+      </div>
       <button class="menu-toggle" aria-label="Open menu">☰</button>
       <nav>
-        <a href="index.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html">Book Table</a>
+        <a class="order-link" href="menu.html">Order Online</a>
       </nav>
     </header>
 
@@ -24,25 +28,30 @@
           src="image1.jpg"
           alt="Toast bread with blueberries"
         />
-        <div class="hero-text">
-          <h1>The Corner Grill</h1>
-          <p>Fresh food. Simple flavors. Friendly place.</p>
+      </section>
+
+      <section class="page-panel">
+        <h1>The Corner Grill</h1>
+        <p>
+          Welcome to The Corner Grill, a simple neighborhood restaurant with fresh
+          plates, warm service, and a menu made for easy favorites.
+        </p>
+        <div class="info-row">
+          <span>Lunch</span>
+          <span>Dinner</span>
+          <span>Takeout</span>
+        </div>
+        <div class="hero-links">
+          <a href="menu.html" class="link-button">Order Now</a>
+          <a href="contact.html" class="link-button ghost">Get in Touch</a>
         </div>
       </section>
 
-      <section>
-        <h1>Welcome</h1>
-        <p>
-          We made this website for the restaurant assignment. The page links to all
-          required sections and works toward the project checklist.
-        </p>
-      </section>
-
-      <section>
+      <section class="page-panel">
         <h2>Gallery</h2>
         <div class="gallery-slider">
           <div class="slides">
-            <img class="slide" src="image1.jpg" alt="Toast bread with blueberry on black plate" />
+            <img class="slide" src="image6.jpg" alt="Fresh grilled chicken and vegetables with toppings" />
             <img class="slide" src="image2.jpg" alt="Sandwich with boiled egg" />
             <img class="slide" src="image3.jpg" alt="Vegetable and meat bowl" />
             <img class="slide" src="image4.jpg" alt="Pizza on chopping board" />
@@ -60,6 +69,11 @@
         <strong>Business Hours</strong>
         <p>Mon-Fri: 10am - 10pm</p>
         <p>Sat-Sun: 11am - 11pm</p>
+      </div>
+      <div class="footer-col">
+        <strong>Follow Us</strong>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
       </div>
     </footer>
 
