@@ -43,6 +43,14 @@ python3 -m http.server 5500
 
 Open: `http://localhost:5500`
 
+## Quick cart check
+
+- Open `menu.html`
+- Click `Add to Cart` on food cards
+- Use `Remove` in the cart list
+- Confirm `Total` updates
+- Use `Clear Cart` to reset the cart
+
 ## Git
 
 - Initial commit pushed to GitHub.
