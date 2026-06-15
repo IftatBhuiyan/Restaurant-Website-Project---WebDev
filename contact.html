@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harbor Lights Grill - Contact</title>
+    <title>Contact - The Corner Grill</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">Harbor Lights</div>
+    <header class="site-header">
+      <div class="logo">The Corner Grill</div>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
       <nav>
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
@@ -18,12 +19,38 @@
     </header>
 
     <main>
-      <h1>Contact</h1>
-      <p>Contact section content will be added in later commits.</p>
+      <section class="contact-grid">
+        <div>
+          <h1>Contact</h1>
+          <p>Send a message and we will reply soon.</p>
+          <iframe
+            title="The Corner Grill map"
+            src="https://www.google.com/maps?q=Times+Square,+New+York,+NY&output=embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
 
     <footer>
-      <p>Footer</p>
+      <div class="footer-col">
+        <strong>Business Hours</strong>
+        <p>Mon-Fri: 10am - 10pm</p>
+        <p>Sat-Sun: 11am - 11pm</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
