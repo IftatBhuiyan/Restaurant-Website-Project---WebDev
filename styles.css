@@ -134,6 +134,51 @@ main {
   gap: 0.3rem;
 }
 
+.cart-shell {
+  margin-top: 1.5rem;
+}
+
+.cart-items {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0.8rem;
+  min-height: 120px;
+  margin-bottom: 0.8rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.cart-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.cart-actions .clear-cart-btn,
+.cart-actions .checkout-btn {
+  padding: 0.55rem 0.85rem;
+}
+
+.cart-actions .checkout-btn {
+  background: #b63d20;
+  color: #fff;
+  border: 0;
+}
+
 footer {
   margin-top: 2rem;
   padding: 1rem;
