@@ -1,57 +1,56 @@
-# Restaurant Website
+# The Corner Grill — React / Next.js
 
-A simple restaurant website built for the class assignment.
+Restaurant website rebuilt with **Next.js**, **React**, and **Tailwind CSS**. The original static HTML site is preserved in `_legacy/` for reference.
+
+## Stack
+
+- Next.js (App Router, static export)
+- React
+- Tailwind CSS
+- GitHub Pages deployment via `gh-pages`
 
 ## Pages
 
-- `index.html` - Home
-- `menu.html` - Menu
-- `about.html` - About
-- `contact.html` - Contact
+- `/` — Home
+- `/menu/` — Menu with shopping cart
+- `/about/` — About
+- `/contact/` — Book a table / contact form and map
 
-## Files
-
-- `index.html`, `menu.html`, `about.html`, `contact.html`
-- `styles.css`
-- `script.js`
-- `README.md`
-
-## Assignment Requirements
-
-- Header with logo and nav links
-- Hero section on home
-- Menu section
-- Gallery with 6+ food/restaurant photos
-- About section text
-- Contact page with map and form
-  - Name
-  - Email
-  - Message
-- Footer with social links and business hours
-- Mobile responsive design with menu toggle
-- Shopping cart on menu page
-  - Add item
-  - Remove item
-  - Show total
-  - Clear cart
-
-## Run locally
+## Setup
 
 ```bash
-python3 -m http.server 5500
+npm install
+npm run compress-images
+npm run dev
 ```
 
-Open: `http://localhost:5500`
+Local dev: [http://localhost:3000/](http://localhost:3000/)
 
-## Quick cart check
+## Build & deploy
 
-- Open `menu.html`
-- Click `Add to Cart` on food cards
-- Use `Remove` in the cart list
-- Confirm `Total` updates
-- Use `Clear Cart` to reset the cart
+```bash
+npm run build
+npm run deploy
+```
 
-## Git
+GitHub Pages URL: `https://iftatbhuiyan.github.io/Restaurant-Website-Project---WebDev/`
 
-- Initial commit pushed to GitHub.
-- More changes will be added in separate commits/PR steps.
+## Project structure
+
+```
+app/           # Routes and layout
+components/    # UI and page components
+context/       # Cart state
+data/          # Menu data
+public/images/ # Food photos
+scripts/       # Image compression helper
+_legacy/       # Original static HTML/CSS/JS site
+```
+
+## Cart (menu page)
+
+- Open `/menu/`
+- Click **Add to Cart** on food cards
+- Use **Remove** in the cart list
+- Confirm **Total** updates
+- Use **Clear Cart** to reset
