@@ -1,9 +1,7 @@
-import Section from "@/components/ui/Section";
-
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-surface">
-      <Section className="py-8 md:py-10">
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 md:py-10 lg:px-8">
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
             <h2 className="text-lg font-normal text-charcoal">Business Hours</h2>
@@ -32,7 +30,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </Section>
+      </div>
     </footer>
   );
 }

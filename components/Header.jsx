@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import Button from "@/components/ui/Button";
+import Button from "@/components/Button";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/menu/", label: "Menu" },
   { href: "/about/", label: "About" },
-  { href: "/contact/", label: "Contact" },
+  { href: "/contact/", label: "Book Table" },
 ];
 
 function isActive(pathname, href) {

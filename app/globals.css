@@ -8,6 +8,7 @@
   --color-brand-dark: #8f2f18;
   --color-border: #e9e2da;
   --color-surface: #ffffff;
+  --color-ink-muted: #5c534c;
   --font-display: var(--font-dm-serif);
   --font-body: var(--font-inter);
 }
@@ -26,4 +27,40 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display), Georgia, serif;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+}
+
+.page-hero-band {
+  background-color: #141210;
+  background-image: linear-gradient(
+    135deg,
+    #0f0e0d 0%,
+    #1a1512 45%,
+    #241a14 100%
+  );
+  color: #ffffff;
+}
+
+.page-hero-band .hero-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.page-hero-band h1,
+.page-hero-band h2 {
+  color: #ffffff;
+}
+
+.page-hero-band p {
+  color: rgba(255, 255, 255, 0.9);
 }
