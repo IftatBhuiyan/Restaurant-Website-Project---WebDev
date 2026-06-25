@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import SiteImage from "@/components/SiteImage";
 import Button from "@/components/Button";
 import { useCart } from "@/context/CartContext";
 
@@ -11,7 +11,7 @@ export default function MenuCard({ item }) {
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition-shadow hover:shadow-md">
       <div className="relative">
         <div className="relative aspect-[4/3] w-full overflow-hidden">
-          <Image
+          <SiteImage
             src={item.image}
             alt={item.name}
             fill
