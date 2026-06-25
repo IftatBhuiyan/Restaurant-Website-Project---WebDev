@@ -1,6 +1,6 @@
 # The Corner Grill — React / Next.js
 
-Restaurant website rebuilt with **Next.js**, **React**, and **Tailwind CSS**. This branch introduces the React framework setup and ports the original static pages into the App Router.
+Restaurant website rebuilt with **Next.js**, **React**, and **Tailwind CSS**. The original static HTML site is preserved in `_legacy/` for reference.
 
 ## Stack
 
@@ -14,7 +14,7 @@ Restaurant website rebuilt with **Next.js**, **React**, and **Tailwind CSS**. Th
 - `/` — Home
 - `/menu/` — Menu with shopping cart
 - `/about/` — About
-- `/contact/` — Contact form and map
+- `/contact/` — Book a table / contact form and map
 
 ## Setup
 
@@ -44,4 +44,13 @@ context/       # Cart state
 data/          # Menu data
 public/images/ # Food photos
 scripts/       # Image compression helper
+_legacy/       # Original static HTML/CSS/JS site
 ```
+
+## Cart (menu page)
+
+- Open `/menu/`
+- Click **Add to Cart** on food cards
+- Use **Remove** in the cart list
+- Confirm **Total** updates
+- Use **Clear Cart** to reset
