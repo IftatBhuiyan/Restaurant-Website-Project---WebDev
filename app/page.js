@@ -1,4 +1,4 @@
-import Image from "next/image";
+import SiteImage from "@/components/SiteImage";
 import Link from "next/link";
 import GallerySlider from "@/components/GallerySlider";
 import Button from "@/components/Button";
@@ -33,7 +33,7 @@ export default function HomePage() {
   return (
     <>
       <section className="relative min-h-[calc(100svh-4rem)] w-full overflow-hidden">
-        <Image
+        <SiteImage
           src="/images/image1.jpg"
           alt="French toast with blueberries and bananas"
           fill
@@ -108,7 +108,7 @@ export default function HomePage() {
                 className="group relative overflow-hidden rounded-2xl bg-charcoal"
               >
                 <div className="relative aspect-[4/5] w-full md:aspect-[3/4]">
-                  <Image
+                  <SiteImage
                     src={item.image}
                     alt={item.title}
                     fill
