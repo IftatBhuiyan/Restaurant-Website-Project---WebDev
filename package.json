@@ -1,0 +1,28 @@
+{
+  "name": "corner-grill",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://iftatbhuiyan.github.io/Restaurant-Website-Project---WebDev",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "compress-images": "node scripts/compress-images.mjs",
+    "predeploy": "npm run build",
+    "deploy": "touch out/.nojekyll && gh-pages -d out -t true"
+  },
+  "dependencies": {
+    "next": "16.2.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "gh-pages": "^6.3.0",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^4"
+  }
+}

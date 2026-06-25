@@ -1,49 +1,47 @@
-# Restaurant Website
+# The Corner Grill — React / Next.js
 
-A simple restaurant website built for the class assignment.
+Restaurant website rebuilt with **Next.js**, **React**, and **Tailwind CSS**. This branch introduces the React framework setup and ports the original static pages into the App Router.
+
+## Stack
+
+- Next.js (App Router, static export)
+- React
+- Tailwind CSS
+- GitHub Pages deployment via `gh-pages`
 
 ## Pages
 
-- `index.html` - Home
-- `menu.html` - Menu
-- `about.html` - About
-- `contact.html` - Contact
+- `/` — Home
+- `/menu/` — Menu with shopping cart
+- `/about/` — About
+- `/contact/` — Contact form and map
 
-## Files
-
-- `index.html`, `menu.html`, `about.html`, `contact.html`
-- `styles.css`
-- `script.js`
-- `README.md`
-
-## Assignment Requirements
-
-- Header with logo and nav links
-- Hero section on home
-- Menu section
-- Gallery with 6+ food/restaurant photos
-- About section text
-- Contact page with map and form
-  - Name
-  - Email
-  - Message
-- Footer with social links and business hours
-- Mobile responsive design with menu toggle
-- Shopping cart on menu page
-  - Add item
-  - Remove item
-  - Show total
-  - Clear cart
-
-## Run locally
+## Setup
 
 ```bash
-python3 -m http.server 5500
+npm install
+npm run compress-images
+npm run dev
 ```
 
-Open: `http://localhost:5500`
+Local dev: [http://localhost:3000/](http://localhost:3000/)
 
-## Git
+## Build & deploy
 
-- Initial commit pushed to GitHub.
-- More changes will be added in separate commits/PR steps.
+```bash
+npm run build
+npm run deploy
+```
+
+GitHub Pages URL: `https://iftatbhuiyan.github.io/Restaurant-Website-Project---WebDev/`
+
+## Project structure
+
+```
+app/           # Routes and layout
+components/    # UI and page components
+context/       # Cart state
+data/          # Menu data
+public/images/ # Food photos
+scripts/       # Image compression helper
+```
