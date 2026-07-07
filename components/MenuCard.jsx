@@ -1,17 +1,17 @@
 "use client";
 
-import Image from "next/image";
+import SiteImage from "@/components/SiteImage";
 import Button from "@/components/Button";
 import { useCart } from "@/context/CartContext";
 
 export default function MenuCard({ item }) {
-  const { addItem } = useCart();
+  const { addItem, syncing } = useCart();
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition-shadow hover:shadow-md">
       <div className="relative">
         <div className="relative aspect-[4/3] w-full overflow-hidden">
-          <Image
+          <SiteImage
             src={item.image}
             alt={item.name}
             fill
@@ -29,7 +29,11 @@ export default function MenuCard({ item }) {
         <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">
           {item.description}
         </p>
-        <Button className="mt-5 w-full" onClick={() => addItem(item.name, item.price)}>
+        <Button
+          className="mt-5 w-full"
+          onClick={() => addItem(item)}
+          disabled={syncing}
+        >
           Add to Cart
         </Button>
       </div>

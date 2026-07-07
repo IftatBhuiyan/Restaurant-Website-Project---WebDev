@@ -1,27 +1,3 @@
-export const galleryImages = [
-  {
-    src: "/images/image1.jpg",
-    alt: "Toast bread with blueberries on a black plate",
-  },
-  {
-    src: "/images/image2.jpg",
-    alt: "Sandwich with boiled egg and avocado",
-  },
-  {
-    src: "/images/image3.jpg",
-    alt: "Vegetable and meat bowl",
-  },
-  {
-    src: "/images/image4.jpg",
-    alt: "Pizza on a chopping board",
-  },
-  {
-    src: "/images/image5.jpg",
-    alt: "Grilled meat and vegetables",
-  },
-];
-
-// Used by server/seed.js to populate MongoDB.
 export const menuCategories = [
   {
     id: "mains",
