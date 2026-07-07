@@ -1,4 +1,4 @@
-import Image from "next/image";
+import SiteImage from "@/components/SiteImage";
 import Button from "@/components/Button";
 
 const storyMilestones = [
@@ -57,7 +57,7 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
-              <Image
+              <SiteImage
                 src="/images/image4.jpg"
                 alt="Pizza and shared plates on a wooden board"
                 fill
@@ -66,7 +66,7 @@ export default function AboutPage() {
               />
             </div>
             <div className="absolute -right-4 -bottom-4 hidden h-40 w-40 overflow-hidden rounded-2xl border-4 border-cream shadow-lg md:block">
-              <Image
+              <SiteImage
                 src="/images/image3.jpg"
                 alt="Bowl with vegetables and meat"
                 fill

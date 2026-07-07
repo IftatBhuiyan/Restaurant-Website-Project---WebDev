@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import SiteImage from "@/components/SiteImage";
 import { galleryImages } from "@/data/menuItems";
 
 export default function GallerySlider() {
@@ -44,7 +44,7 @@ export default function GallerySlider() {
                 }`}
                 aria-hidden={index !== current}
               >
-                <Image
+                <SiteImage
                   src={image.src}
                   alt={image.alt}
                   fill
@@ -93,7 +93,7 @@ export default function GallerySlider() {
               aria-label={`View ${image.alt}`}
               aria-current={index === current}
             >
-              <Image
+              <SiteImage
                 src={image.src}
                 alt=""
                 fill
