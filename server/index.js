@@ -47,8 +47,8 @@ app.use((err, _req, res, _next) => {
 
 async function start() {
   await connectDB(MONGODB_URI);
-  app.listen(PORT, () => {
-    console.log(`API listening on http://localhost:${PORT}`);
+  app.listen(PORT, "0.0.0.0", () => {
+    console.log(`API listening on port ${PORT}`);
   });
 }
 
